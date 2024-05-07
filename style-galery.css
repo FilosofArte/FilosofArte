@@ -142,7 +142,7 @@ nav li:first-child{
     display: block;
   }
   .acordion{
-    max-width: 350px;
+    max-width: 300px;
   }
   .contenedor-acordeon{
     width: 90%;
