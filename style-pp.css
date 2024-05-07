@@ -100,3 +100,17 @@ nav li:first-child{
     width: 100%;
   }
 }
+@media screen and (max-width: 900px){
+  .contenido{
+    width: 75%;
+  }
+  .contiene-img{
+    height: 200vh;
+  }
+  #contenedortxt{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
