@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas y Respuestas</title>
+  <link href="style-obras.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/16b437c5e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="lateral">
+      <li onclick=escondelateral()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> FilosofArte</a></li>
+      <li class="escondeEnMovil"><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+      <li class="menuboton" onclick=mostrarlateral()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <!-- CONTENIDO -->
+
+  <div id="ContentItemsCarrusel">
+
+    <div class="item-carrusel" id="item1">
+      <div class="tarjeta-carrusel" id="tarjeta1" style="background-image: url(./img/almendro.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2> Almendro en flor</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td> Vincet van Gogh</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1890</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Francia</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td> Óleo (73’5 x 92cm)</td>
+              </tr>
+            </table>
+            <p>Dato curioso: Almendro en flor es un óleo sobre lienzo pintado en febrero de 1890 en SaintRémy-de-Provence por el pintor holandés Vincent van Gogh. Inspirándose en la xilografía japonesa, 
+            el tema de ramas en flor contra un cielo azul era uno de los preferidos de Van Gogh</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item2">
+      <div class="tarjeta-carrusel" id="tarjeta2" style="background-image: url(./img/ts.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>Toy Story</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>: John Lasseter</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1995</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Pixar Animation Studios</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td> Pelicula de animación de comedia, drama y acción</td>
+              </tr>
+            </table>
+            <p>Dato curioso:  Durante la producción de Toy Story, hubo un momento en el que se planteó la idea de hacer que Woody fuera un villano celoso en lugar de un héroe. Sin embargo, el equipo creativo decidió cambiar de rumbo y transformar a Woody en el líder carismático y amable que conocemos hoy.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item3">
+      <div class="tarjeta-carrusel" id="tarjeta3" style="background-image: url(./img/pride.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>Orgullo y prejiucio</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Jane Austen</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td> 28 de enero de 1813</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Hampshire, Inglaterras</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Ficción, Novela rosa, Novela costumbrista</td>
+              </tr>
+            </table>
+            <p>Dato curioso: Orgullo y prejuicio, publicada por primera vez el 28 de enero de 1813 como una obra anónima, es la más famosa de las novelas de Jane Austen y una de las primeras comedias románticas en la historia de la novela.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JAVA -->
+  <script>
+    function mostrarlateral() {
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'flex';
+    }
+    function escondelateral(){
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'none';
+    }
+  </script>
+  </body>
+
+  </html>

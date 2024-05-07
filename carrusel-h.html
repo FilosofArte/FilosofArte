@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas y Respuestas</title>
+  <link href="style-obras.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/16b437c5e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="lateral">
+      <li onclick=escondelateral()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> FilosofArte</a></li>
+      <li class="escondeEnMovil"><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+      <li class="menuboton" onclick=mostrarlateral()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <!-- CONTENIDO -->
+
+  <div id="ContentItemsCarrusel">
+
+    <div class="item-carrusel" id="item1">
+      <div class="tarjeta-carrusel" id="tarjeta1" style="background-image: url(./img/morel.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>La invención de Morel</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Adolfo Bioy Casares</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1940</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Argentina</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Cuento</td>
+              </tr>
+            </table>
+            <p>Dato curioso: es que la novela fue una de las principales inspiraciones para la creación del videojuego "SOMA", desarrollado por Frictional Games. "SOMA" explora temas similares de identidad, conciencia y realidad virtual, y su historia y ambiente comparten similitudes con la obra de Adolfo.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item2">
+      <div class="tarjeta-carrusel" id="tarjeta2" style="background-image: url(./img/mona.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>La Gioconda(Mona Lisa)</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Leonardo da Vinci</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1503-1506</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Francia</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td> Pintura al óleo sobre madera</td>
+              </tr>
+            </table>
+            <p>Dato curioso: La Mona Lisa no sólo ha sido robada, sino que también ha sido víctima de ataques como ser rociada con ácido y golpeada con una piedra lanzada por un visitante del Louvre.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item3">
+      <div class="tarjeta-carrusel" id="tarjeta3" style="background-image: url(./img/fire.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>Hombre en fuego</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Malcolm Browne</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td> 1963</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Vietnam del Sur</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Fotografía</td>
+              </tr>
+            </table>
+            <p>Dato curioso: es que capturó un acto de protesta extremadamente impactante: el monje budista Thích Quảng Đức se inmoló en llamas como una forma de protesta contra el gobierno de Vietnam del Sur en 1963.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JAVA -->
+  <script>
+    function mostrarlateral() {
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'flex';
+    }
+    function escondelateral(){
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'none';
+    }
+  </script>
+  </body>
+
+  </html>

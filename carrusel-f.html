@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas y Respuestas</title>
+  <link href="style-obras.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/16b437c5e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="lateral">
+      <li onclick=escondelateral()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> FilosofArte</a></li>
+      <li class="escondeEnMovil"><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+      <li class="menuboton" onclick=mostrarlateral()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <!-- CONTENIDO -->
+
+  <div id="ContentItemsCarrusel">
+
+    <div class="item-carrusel" id="item1">
+      <div class="tarjeta-carrusel" id="tarjeta1" style="background-image: url(./img/1F.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>La creación de Adán</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Miguel Ángel Buonarroti</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1512</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Italia</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td> Frescoo</td>
+              </tr>
+            </table>
+            <p>Dato curioso: La creación de Adán es una de las obras más famosas del Renacimiento y forma parte de la decoración del techo de la Capilla Sixtina en el Vaticano.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item2">
+      <div class="tarjeta-carrusel" id="tarjeta2" style="background-image: url(./img/2F.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>Mi vecino Totoro (Tonari no Totoro)</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Hayao Miyazaki</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>16 Abril de 1988</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td> Película de animación (anime)</td>
+              </tr>
+            </table>
+            <p>Dato curioso: "Mi vecino Totoro" es una de las películas más icónicas del Studio Ghibli y se ha convertido en un símbolo cultural de Japón. Totoro, el personaje principal, se ha convertido en el emblema del estudio y es ampliamente reconocido en todo el mundo.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item3">
+      <div class="tarjeta-carrusel" id="tarjeta3" style="background-image: url(./img/eva.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>Neon Genesis Evangelion</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Hideaki Anno</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td> 04 de Octubre 1995</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Serie de anime (televisión)</td>
+              </tr>
+            </table>
+            <p>Dato curioso: Neon Genesis Evangelion ha sido elogiado por su compleja trama psicológica, simbolismo religioso y su impactante representación de los conflictos emocionales y psicológicos de los personajes.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JAVA -->
+  <script>
+    function mostrarlateral() {
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'flex';
+    }
+    function escondelateral(){
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'none';
+    }
+  </script>
+  </body>
+
+  </html>

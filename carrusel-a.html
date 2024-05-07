@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas y Respuestas</title>
+  <link href="style-obras.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/16b437c5e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="lateral">
+      <li onclick=escondelateral()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> FilosofArte</a></li>
+      <li class="escondeEnMovil"><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+      <li class="menuboton" onclick=mostrarlateral()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <!-- CONTENIDO -->
+
+  <div id="ContentItemsCarrusel">
+
+    <div class="item-carrusel" id="item1">
+      <div class="tarjeta-carrusel" id="tarjeta1" style="background-image: url(./img/hamlet.png);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>La tragedia de Hamlet, príncipe de Dinamarca</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>William Shakespeare</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1623</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Inglaterra</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Obra literaria/Teatro</td>
+              </tr>
+            </table>
+            <p>Dato curioso: Sigmund Freud se basó en el personaje de Hamlet y su historia para explicar el complejo de Edipo, por lo que influyó en la psicología moderna.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item2">
+      <div class="tarjeta-carrusel" id="tarjeta2" style="background-image: url(./img/elpensador.png);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>El Pensador</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Auguste Rodin</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1884</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Francia</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td> Escultura</td>
+              </tr>
+            </table>
+            <p>Dato curioso: La escultura recibió originalmente el nombre de “El Poeta”, pues representaba a Dante, el autor de La Divina Comedia.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item3">
+      <div class="tarjeta-carrusel" id="tarjeta3" style="background-image: url(./img/prince.png);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>El Principito</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Antoine de Saint-Exupéry</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td> 1943</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Estados Unidos</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Obra literaria</td>
+              </tr>
+            </table>
+            <p>Dato curioso: El autor era aviador y un viaje que hizo al Sahara le sirvió como inspiración, posterior a la publicación de la historia este se reintegró a la guerra como piloto en 1944.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JAVA -->
+  <script>
+    function mostrarlateral() {
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'flex';
+    }
+    function escondelateral(){
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'none';
+    }
+  </script>
+  </body>
+
+  </html>

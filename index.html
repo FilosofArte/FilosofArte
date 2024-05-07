@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Principal</title>
+  <link rel="stylesheet" type="text/css" href="style-pp.css">
+  <script src="https://kit.fontawesome.com/16b437c5e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+  <ul class="lateral">
+    <li onclick=escondelateral()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+    <li><a href="cuestionario.html">Cuestionario</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="creditos.html">Créditos</a></li>
+  </ul>
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i> FilosofArte</a></li>
+    <li class="escondeEnMovil"><a href="cuestionario.html">Cuestionario</a></li>
+    <li class="escondeEnMovil"><a href="galeria.html">Galería</a></li>
+    <li class="escondeEnMovil"><a href="creditos.html">Créditos</a></li>
+    <li class="menuboton" onclick=mostrarlateral()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+  </ul>
+</nav>
+
+  
+<div class="contiene-img">
+  <div class="contenido" id="contenedortxt">
+    <h1 align="center">Filosofía</h1><br>
+    <p align="center">
+    La filosofía es la disciplina que busca comprender y cuestionar los fundamentos de la realidad, el conocimiento, la existencia y los valores. Nos ayuda a reflexionar sobre el sentido de la vida, a cuestionar nuestras creencias y a desarrollar un pensamiento crítico. A través de la filosofía, aprendemos a percibir las cosas desde diferentes perspectivas, a analizarlas de manera más profunda y a comprender mejor el mundo que nos rodea. Nos invita a cuestionar lo establecido y a buscar respuestas más allá de lo evidente.</p>
+    <br>
+    <p align="center">
+    La filosofía moderna fue profundamente influenciada por pensadores como René Descartes. Descartes es conocido por su famosa frase "Pienso, luego existo" ("Cogito, ergo sum"), la cual resalta la importancia del pensamiento individual y la duda metódica como base del conocimiento. Su enfoque racionalista y su método deductivo influyeron significativamente en el desarrollo de la filosofía y la ciencia moderna. Además, Descartes contribuyó a establecer las bases del dualismo mente-cuerpo, que ha sido un tema central en la filosofía de la mente.</p>
+
+  </div>
+</div>
+  <script>
+    function mostrarlateral() {
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'flex';
+    }
+    function escondelateral(){
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'none';
+    }
+  </script>
+</body>
+
+</body>
+</html>

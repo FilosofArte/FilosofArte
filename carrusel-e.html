@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas y Respuestas</title>
+  <link href="style-obras.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/16b437c5e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="lateral">
+      <li onclick=escondelateral()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> FilosofArte</a></li>
+      <li class="escondeEnMovil"><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+      <li class="menuboton" onclick=mostrarlateral()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <!-- CONTENIDO -->
+
+  <div id="ContentItemsCarrusel">
+
+    <div class="item-carrusel" id="item1">
+      <div class="tarjeta-carrusel" id="tarjeta1" style="background-image: url(./img/1E.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>El nacimiento de venus</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Sandro Botticelli (Alessandro di Mariano di Vanni Filipepi)</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1484-1486</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Italia</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Pintura al temple sobre lienzo</td>
+              </tr>
+            </table>
+            <p>Dato curioso: : Durante siglos, la obra estuvo olvidada hasta que fue redescubierta en el siglo XIX por críticos de arte durante el resurgimiento del interés por el arte del Renacimiento.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item2">
+      <div class="tarjeta-carrusel" id="tarjeta2" style="background-image: url(./img/2E.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>El ángel caído</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Alexandre Cabanel</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1868</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Francia</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td> Pintura al óleo sobre lienzo</td>
+              </tr>
+            </table>
+            <p>Dato curioso: La obra "El ángel caído" fue presentada en el Salón de París en 1868, donde recibió una cálida acogida y se convirtió en una de las pinturas más populares del siglo XIX..</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item3">
+      <div class="tarjeta-carrusel" id="tarjeta3" style="background-image: url(./img/3E.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>El jardín de las delicias</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Hieronymus Bosch (Jheronimus van Aken)</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td> 1503-1504</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Países Bajos (Holanda)</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Pintura al óleo sobre tabla (tríptico)</td>
+              </tr>
+            </table>
+            <p>Dato curioso: A pesar de su antigüedad, el significado exacto de la obra sigue siendo objeto de debate entre los historiadores del arte, y su complejidad iconográfica ha intrigado a generaciones de espectadores.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JAVA -->
+  <script>
+    function mostrarlateral() {
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'flex';
+    }
+    function escondelateral(){
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'none';
+    }
+  </script>
+  </body>
+
+  </html>

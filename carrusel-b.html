@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas y Respuestas</title>
+  <link href="style-obras.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/16b437c5e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="lateral">
+      <li onclick=escondelateral()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> FilosofArte</a></li>
+      <li class="escondeEnMovil"><a href="galeria.html"><i class="fa-solid fa-reply"></i>  REGRESAR</a></li>
+      <li class="menuboton" onclick=mostrarlateral()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <!-- CONTENIDO -->
+
+  <div id="ContentItemsCarrusel">
+
+    <div class="item-carrusel" id="item1">
+      <div class="tarjeta-carrusel" id="tarjeta1" style="background-image: url(./img/1B.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>Guernica</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Pablo Picasso</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>1937</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>Francia</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Pintura al óleo</td>
+              </tr>
+            </table>
+            <p>Dato curioso: El cuadro fue incluido dentro del catálogo de creaciones prohibidas y denostadas por el partido nazi en la guía para la Exposición de 1937.</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item2">
+      <div class="tarjeta-carrusel" id="tarjeta2" style="background-image: url(./img/escritores.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>Escritores de la Libertad</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>Erin Gruwell, Freedom Writters</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td>2007</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>California, Estados Unidos</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>  Cine</td>
+              </tr>
+            </table>
+            <p>Dato curioso: Recibió múltiples nominaciones y reconocimientos, incluyendo una nominación al premio Humanitas por su guion y el Premio del Público en el Festival de Cine de Estocolmo.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item3">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item-carrusel" id="item3">
+      <div class="tarjeta-carrusel" id="tarjeta3" style="background-image: url(./img/3B.jpg);">
+        <div class="contenedortxt">
+
+          <div class="contienetabla">
+            <h2>: El hombre en llamas</h2>
+            <table>
+              <tr>
+                <th>Autor:</th>
+                <td>José Clemente Orozco</td>
+              </tr>
+              <tr>
+                <th>Año de creación:</th>
+                <td> 1939</td>
+              </tr>
+              <tr>
+                <th>Origen:</th>
+                <td>México</td>
+              </tr>
+              <tr>
+                <th>Tipo de obra:</th>
+                <td>Mural</td>
+              </tr>
+            </table>
+            <p>Dato curioso: La obra se encuentra en el Hospicio Cabañas que es ahora un museo y un sitio del Patrimonio Mundial de la UNESCO.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flecha-carrusel">
+        <a href="#item2">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        </a>
+        <a href="#item1">
+          <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JAVA -->
+  <script>
+    function mostrarlateral() {
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'flex';
+    }
+    function escondelateral(){
+      const lateral = document.querySelector('.lateral');
+      lateral.style.display = 'none';
+    }
+  </script>
+  </body>
+
+  </html>

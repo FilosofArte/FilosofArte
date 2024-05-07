@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #d485ff;
+  color: white;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+
+.lateral{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(222, 222, 222, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lateral li{
+  width: 100%;
+}
+.lateral a{
+  width: 100%;
+}
+
+.menuboton{
+  display: none;
+}
+
+.contiene-img{
+  min-height: 100vh;
+  background-image: url(filosofondo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contenido{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 600px;
+  height: auto;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 10px;
+}
+#contenedortxt{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+@media(max-width: 800px){
+  .escondeEnMovil{
+    display: none;
+  }
+  .menuboton{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .lateral{
+    width: 100%;
+  }
+}
