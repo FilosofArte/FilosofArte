@@ -1,0 +1,152 @@
+
+/* NAVEGADOR */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #d485ff;
+  color: white;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+
+.lateral{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(222, 222, 222, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lateral li{
+  width: 100%;
+}
+.lateral a{
+  width: 100%;
+}
+
+.menuboton{
+  display: none;
+}
+/* CALENDARIO */
+body{
+  background-color: #c999d7;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #7a41b7 12%, transparent 12.5%, transparent 87%, #7a41b7 87.5%, #7a41b7), linear-gradient(150deg, #7a41b7 12%, transparent 12.5%, transparent 87%, #7a41b7 87.5%, #7a41b7), linear-gradient(30deg, #7a41b7 12%, transparent 12.5%, transparent 87%, #7a41b7 87.5%, #7a41b7), linear-gradient(150deg, #7a41b7 12%, transparent 12.5%, transparent 87%, #7a41b7 87.5%, #7a41b7), linear-gradient(60deg, #7a41b777 25%, transparent 25.5%, transparent 75%, #7a41b777 75%, #7a41b777), linear-gradient(60deg, #7a41b777 25%, transparent 25.5%, transparent 75%, #7a41b777 75%, #7a41b777);
+  background-size: 52px 91px;
+  background-position: 0 0, 0 0, 26px 46px, 26px 46px, 0 0, 26px 46px;
+  
+  text-align: center;
+}
+.agenda{
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+.meses{
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.abril{
+  width: 400px;
+}
+.mayo{
+  width: 400px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+
+/* BOTON */
+
+@media screen and (max-width: 900px){
+  .contenedor-acordeon{
+    width: 90%;
+  }
+}
+@media(max-width: 800px){
+  .escondeEnMovil{
+    display: none;
+  }
+  .menuboton{
+    display: block;
+  }
+  .meses{
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .agenda{
+    background-color: white;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 25px;
+  }
+}
+@media(max-width: 400px){
+  .lateral{
+    width: 100%;
+  }
+}
+
